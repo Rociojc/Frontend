@@ -1,0 +1,77 @@
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-formulario {
+    background-color: #00669F;
+    width: 854px;
+    height: 632px;
+    border-radius: 50px;
+    padding: 25px 80px;
+    color: white;
+}
+.contenedor-formulario__titulo {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contenedor-formulario__texto {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.formulario__label {
+    display: flex;
+    flex-direction: column;
+}
+.formulario__label--input {
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 7px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.formulario__label--agregar {
+    margin: 15px 0;
+}
+.descripcion {
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.formulario-seleccion {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.formulario-seleccion__label {
+    font-size: 14px;
+}
+hr {
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.formulario-seleccion__label--input {
+    margin-right: 10px;
+}
+.boton-añadir {
+    grid-column: 1 / 3;
+    background-color: #1CD1B0;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 45px;
+    justify-self: center;
+    font-size: 25px;
+    font-weight: bold;
+}

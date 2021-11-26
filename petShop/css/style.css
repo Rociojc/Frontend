@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilo general del body*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Estilo de la barra de ofertas y del contenido del header*/
+.encabezado {
+    display: none;
+}
+.contenedor-header {
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    padding: 0 30px;
+}
+.contenedor-header__logo {
+    width: 167px;
+    height: 23px;
+}
+.contenedor-header__nav .fas {
+    color: white;
+}
+.contenedor-header__nav-items {
+    display: none;
+}
+
+/*Estilos de la primera seccion del main*/
+.contenedor-slider {
+    width: 100%;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
+.contenedor-slider__p1 {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #3C2313;
+}
+.contenedor-slider__p2 {
+    align-self: flex-end;
+    color: #3C2313;
+}
+.contenedor-slider__boton {
+    background-color: #F0A83E;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+/*Estilos de la segunda seccion del main*/
+.contenedor-productos {
+    text-align: center;
+    padding: 20px 40px;
+}
+.contenedor-productos .fas {
+    font-size: 90px;
+    -webkit-text-stroke: 5px #F0A83E;
+    color: transparent;
+    margin-bottom: 20px;
+}
+.contenedor-productos__titulo {
+    font-size: 40px;
+    color: #3C2313;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contenedor-productos__opciones {
+    font-size: 13px;
+    word-spacing: 20px;
+    margin-bottom: 30px;
+}
+/*Estilo (layout) al contenedor que tiene las tarjetas*/
+.layout-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+/*Estilos de las tarjetas dentro de la segunda seccion de main*/
+.tarjeta-producto {
+    background-color: #FBFAF6;
+    border: 1px solid black;
+    width: 250px;
+    height: 300px;
+    font-size: 13px;
+}
+.tarjeta-producto__imagen--tamaño {
+    width: 100%;
+}
+.tarjeta-producto__info--nombre {
+    color: #3C2313;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.tarjeta-producto__info--precio {
+    color: #F0A83E;
+    font-weight: 500;
+}
+
+/*Estilos de la tercera seccion del main*/
+.contenedor-formularios {
+    border: 1px solid black;
+}

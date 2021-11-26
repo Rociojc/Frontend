@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 240px;
+    text-align: center;
+}
+.contenedor-foto {
+    background-color: #E5E5E5;
+    width: 100%;
+    height: 190px;
+    padding: 20px 0;
+}
+.contenedor-foto__dimensiones {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.nombre-cv {
+    background-color: #C4C4C4;
+    color: #005677;
+    letter-spacing: 5px;
+    padding: 5px 0;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+.acerca-de-mi {
+    width: 100%;
+    height: 100px;
+}
+
+.datos-personales__titulo,
+.formacion-academica__titulo,
+.experiencia-laboral__titulo {
+    background-color: #C4C4C4;
+    color: #005677;
+    padding: 5px 10px;
+    letter-spacing: 5px;
+}
+.datos-personales__datos {
+    margin-left: 20px;
+    padding: 15px;
+    line-height: 20px;
+}
+.datos-personales__datos li > span {
+    font-weight: bold;
+}
+.formacion-academica__estudios,
+.experiencia-laboral__empresas {
+    padding: 20px;
+}
+.formacion-academica__estudios > dt,
+.experiencia-laboral__empresas > dt {
+    font-weight: bold;
+}
+.formacion-academica__estudios > dd,
+.experiencia-laboral__empresas > dd {
+    margin-left: 40px;
+}
+
+footer {
+    background-color: #005677;
+    height: 40px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+}
+footer > span {
+    margin-right: 20px;
+}
+.instagram,
+.linkedin {
+    text-decoration: none;
+    vertical-align: sub;
+}
+.instagram {
+    margin-right: 20px;
+}

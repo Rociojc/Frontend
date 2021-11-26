@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Heroes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+</head>
+<body>
+    <div class="barra-top">Descuentos 20%</div>
+    <header>
+        <h1 class="titulo">Heroes</h1>
+    </header>
+    <main>
+        <section class="contenedor-formulario">
+            <h1 class="contenedor-formulario__titulo">Añadí tu super!</h1>
+            <p class="contenedor-formulario__texto">Agregá tu personaje favorito completando las opciones.</p>
+            <form class="formulario" action="">
+                
+                <label class="formulario__label" for="">Nombre
+                    <input class="formulario__label--input" type="text">
+                </label>
+
+                <label class="formulario__label" for="">Especie
+                    <input class="formulario__label--input" type="text">
+                </label>
+                
+                <label class="formulario__label" for="">Fecha
+                    <input class="formulario__label--input" type="date">
+                </label>
+                
+                <label class="formulario__label" for="">Agregar Foto
+                    <input class="formulario__label--agregar" type="file" name="avatar" accept=".jpg, .png">
+                </label>
+                
+                <textarea class="descripcion" name="Descripcion" cols="30" rows="10">Descripcion</textarea>
+
+                <div class="formulario-seleccion">
+                    <label class="formulario-seleccion__titulo" for="">Poderes</label>
+                    <label class="formulario-seleccion__label" for="">
+                        <input class="formulario-seleccion__label--input" type="checkbox" name="volar">Volar
+                    </label>
+            
+                    <label class="formulario-seleccion__label" for="">
+                        <input class="formulario-seleccion__label--input" type="checkbox" name="volar">Superinteligencia
+                    </label>
+            
+                    <label class="formulario-seleccion__label" for="">
+                        <input class="formulario-seleccion__label--input" type="checkbox" name="volar">Vista de rayo láser
+                    </label>
+            
+                    <label class="formulario-seleccion__label" for="">
+                        <input class="formulario-seleccion__label--input" type="checkbox" name="volar">Billetera gorda
+                    </label>
+
+                    <hr>
+
+                    <label class="formulario-seleccion__titulo" for="">Tipo de personaje</label>
+                    <label class="formulario-seleccion__label" for="">
+                        <input class="formulario-seleccion__label--input" type="radio">Héroe / Heroina
+                    </label>
+
+                    <label class="formulario-seleccion__label" for="">
+                        <input class="formulario-seleccion__label--input" type="radio">Villano / Villana
+                    </label>
+                </div>
+
+                <input class="boton-añadir" type="submit" value="Añadir">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
