@@ -56,7 +56,7 @@ body {
     background-color: papayawhip;
 
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 .main-intro {
     background-color: palegreen; /*Quitar cuando acabe*/
@@ -178,5 +178,36 @@ body {
     color: var(--Grayish-blue);
     line-height: 25px;
 }
+/*Estilos de la cuarta seccion del main*/
+.main-unirse {
+    background-color: var(--bright-red);
+    width: 100%;
+    height: 300px;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main-unirse__texto {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--white);
+    text-align: center;
+}
+.main-unirse__boton--color {
+    background-color: var(--white);
+    color: var(--bright-red);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    margin-top: 0;
+}
 
+/*Estilos del contenedor foorder*/
+.contenedor-footer {
+    background-color: var(--dark-blue);
+    padding: 25px;
+}
+.contenedor-footer__logo {
+ 
+}
 
