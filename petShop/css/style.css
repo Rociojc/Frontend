@@ -124,3 +124,39 @@ body {
 .contenedor-formularios {
     border: 1px solid black;
 }
+/*Estilo del formulario contactenos de la tercera seccion del main*/
+.formulario-contacto {
+    padding: 20px 40px;
+}
+
+.formulario-contacto__titulo {
+    font-size: 40px;
+    color: #3C2313;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.formulario-contacto__input {
+    background-color: #3C2313;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 10px;
+    color: #AB9C9C;
+}
+.formulario-contacto__boton-reset {
+    background-color: #8A8787;
+    width: 140px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+.formulario-contacto__boton-enviar {
+    background-color: #F0A83E;
+    width: 140px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+}
