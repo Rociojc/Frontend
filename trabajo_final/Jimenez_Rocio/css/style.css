@@ -35,47 +35,43 @@ body {
 
 /*Estilos del contenedor header*/
 .contenedor-header {
-    background-color: burlywood; /*Quita cuando acabe*/
-
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     margin-top: 40px;
     padding: 0 30px;
 }
+.contenedor-header__logo {
+    width: 146px;
+    height: 24px;
+}
 .contenedor-nav__lista-items {
     display: none;
 }
-.contenedor-nav__boton {
+.contenedor-header__boton {
     display: none;
 }
 
 /*Estilos del contenedor main*/
-/*Estilos de la primera seccion del main*/
 .contenedor-main {
-    background-color: papayawhip;
-
     width: 100%;
     padding: 50px 0 0;
 }
+/*Estilos de la primera seccion del main*/
 .main-intro {
-    background-color: palegreen; /*Quitar cuando acabe*/
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    
     padding: 10px 25px;
 }
 .main-intro__imagen-graficos {
     width: 320px;
-    border: 1px solid black;
 }
 .main-intro__info {
     width: 320px;
     text-align: center;
-    border: 1px solid black;
 }
 .main-intro__info--titulo {
     font-size: 2.3rem;
@@ -99,8 +95,9 @@ body {
 }
 /*Estilos de la segunda seccion del main*/
 .main-caracteristicas {
-    background-color: lavender; /*Quitar cuando acabe*/
-
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
     margin-top: 60px;
 }
 .main-caracteristicas__info {
@@ -115,6 +112,7 @@ body {
 }
 .main-caracteristicas__info--parrafo {
     color: var(--Grayish-blue);
+    line-height: 25px;
 }
 .main-caracteristicas__lista--titulo {
     background-color: rgba(242, 97, 59, 0.2);
@@ -130,15 +128,15 @@ body {
     padding: 10px 25px;
     margin-right: 15px;
     border-radius: 30px;
+    color: var(--white);
 }
 .main-caracteristicas__lista--parrafo {
     color: var(--Grayish-blue);
     line-height: 25px;
+    padding: 0 5px;
 }
 /*Estilos de la tercera seccion del main*/
 .main-comentarios {
-    background-color: lightcoral; /*Quitar cuando acabe*/
-
     margin-top: 60px;
     padding: 10px 0;
     text-align: center;
@@ -155,8 +153,6 @@ body {
     gap: 60px;
 }
 .main-comentarios__tarjetas {
-    border: 1px solid black; /*Quitar cuando acabe*/
-
     background-color: var(--light-gray);
     width: 375px;
     height: 220px;
@@ -178,6 +174,9 @@ body {
     color: var(--Grayish-blue);
     line-height: 25px;
 }
+.main-comentarios__boton {
+    margin-top: 60px;
+}
 /*Estilos de la cuarta seccion del main*/
 .main-unirse {
     background-color: var(--bright-red);
@@ -188,6 +187,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 .main-unirse__texto {
     font-size: 2.5rem;
@@ -206,8 +206,165 @@ body {
 .contenedor-footer {
     background-color: var(--dark-blue);
     padding: 25px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+.contenedor-footer__form {
+    width: 320px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.contenedor-footer__form--input {
+    width: 75%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+}
+.contenedor-footer__form--boton {
+    background-color: var(--bright-red);
+    width: 20%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    color: var(--white);
+}
+.contenedor-footer__nav {
+    width: 260px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 30px;
+    margin: 25px 0;
+}
+.contenedor-footer__nav > li > a {
+    text-decoration: none;
+    color: var(--white);
+}
+.contenedor-footer__redes {
+    display: flex;
+    justify-content: space-around;
+    width: 320px;
+    margin: 20px 0;
+}
+.contenedor-footer__redes--iconos {
+    width: 30px;
+    height: 30px;
+}
+.iconos-redes {
+    width: 100%;
 }
 .contenedor-footer__logo {
- 
+    height: 27px;
+    margin: 20px 0;
+}
+.contenedor-footer__derechos-autor {
+    font-size: 0.8rem;
+    color: var(--Grayish-blue);
 }
 
+/*Estilos para dispositivos mayores de 375px*/
+@media (min-width: 376px) {
+    /*Estilos del contenedor header*/
+    .contenedor-header {
+        padding: 0 80px;
+    }
+    .contenedor-nav__icono {
+        display: none;
+    }
+    .contenedor-nav__lista-items {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        font-size: 0.9rem;
+    }
+    .contenedor-nav__lista-items > li > a {
+        text-decoration: none;
+        color: var(--dark-desaturated-blue);
+    }
+    .contenedor-header__boton {
+        display: inline-block;
+        text-decoration: none;
+        background-color: var(--bright-red);
+        border-radius: 50px;
+        padding: 15px 30px;
+        font-size: 0.8rem;
+        color: var(--white);
+        box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+    }
+
+    /*Estilos del contenedor main*/
+    /*Estilos de la primera seccion del main*/
+    .main-intro {
+        padding: 10px 80px;
+        justify-content: space-between;
+    }
+    .main-intro__imagen-graficos {
+        width: 500px;
+    }
+    .main-intro__info {
+        width: 500px;
+        order: -1;
+    }
+    .main-intro__info--titulo {
+        font-size: 3.6rem;
+        text-align: left;
+    }
+    .main-intro__info--parrafo {
+        text-align: left;
+        font-size: 1.2rem;
+        line-height: 27px;
+        margin-top: 20px;
+    }
+    /*Estilos de la segunda seccion del main*/
+    .main-caracteristicas {
+        padding: 0 80px;
+    }
+    .main-caracteristicas__info {
+        grid-row: 1 / 4;
+        text-align: left;
+    }
+    .main-caracteristicas__info--titulo {
+        width: 80%;
+        font-size: 2.3rem;
+    }
+    .main-caracteristicas__info--parrafo {
+        width: 60%;
+    }
+    .main-caracteristicas__lista--titulo {
+        background-color: transparent;
+    }
+    .main-caracteristicas__lista--parrafo {
+        margin-left: 85px;
+    }
+    /*Estilos de la cuarta seccion del main*/
+    .main-unirse {
+        justify-content: space-between;
+        padding: 0 80px;
+
+    }
+    .main-unirse__texto {
+        width: 500px;
+        text-align: left;
+    }
+
+    /*Estilos del contenedor del footer*/
+    /* .contenedor-footer {
+        justify-content: space-between;
+        padding: 30px 80px;
+    }
+    .contenedor-footer__form {
+        margin: 0;
+    }
+    .contenedor-footer__nav {
+        width: 400px;
+        order: -1;
+        margin: 0;
+    }
+    .contenedor-footer__logo {
+        order: -2;
+        margin: 0;
+    } */
+}
